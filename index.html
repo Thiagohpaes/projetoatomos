@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+      integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2? family= Poppins:wght@300;400;500;600;700 & family= Roboto:wght@400;500;700 & display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Thiago Paes</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="imagens/Imagens/star-wars.png" alt="logo Thiago Paes" />
+      </div>
+      <ul>
+        <li>
+          <a target="blank" href="https://github.com/Thiagohpaes">Github</a>
+        </li>
+        <li>
+          <a target="blank" href="mailto:t.paes@hotmail.com">Email</a>
+        </li>
+        <li>
+          <a target="blank" href="https://wa.me/41997070864">Whatsapp</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Thiago Paes</h1>
+          <h5>Front-End Developer</h5>
+        </div>
+
+        <div onclick="displayAbout()" id="arrow">
+          <i id="animation" class="fa-solid fa-caret-down"></i>
+        </div>
+
+        <div style="display: none" id="about" class="perspective">
+          <p id="blue">A long time ago, in a galaxy far, far away....</p>
+          <p>
+            Olá, meu nome é Thiago tenho 23 anos, estou cursando analise e
+            desenvolvimento de sistemas e atualmente estou estudando
+            desenvovimento Front-End, esse é meu primeiro projeto para o Hiring
+            Coders #3!
+          </p>
+        </div>
+        <div class="form">
+          <div>
+            <p>Deixe seu contato!</p>
+          </div>
+          <form action="">
+            <input type="text" placeholder=" email " />
+            <button>Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function displayAbout() {
+        var arrow = document.getElementById('animation')
+        arrow.classList.toggle('rotate')
+
+        var display = document.getElementById('about')
+        display.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
